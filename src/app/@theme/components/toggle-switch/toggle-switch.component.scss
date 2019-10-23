@@ -1,0 +1,59 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  align-items: center;
+
+  .choice, .switch {
+    cursor: pointer;
+  }
+
+  .choice {
+    user-select: none;
+  }
+
+  .switch {
+    @extend %reset-button-styles;
+    $buttonSize: 3.0rem;
+    $sliderSize: 2.0rem;
+
+    position: relative;
+    margin: 0 $gutter;
+    padding: (($buttonSize - $sliderSize) / 2) 0;
+
+    &::before {
+      content: '';
+      display: block;
+      height: $sliderSize;
+      width: 4.5rem;
+      border-radius: $sliderSize / 2;
+      background-color: $gray;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 3.0rem;
+      height: 3.0rem;
+      border-radius: 50%;
+      box-shadow: $shadow;
+      background-color: $primaryColor;
+
+      transition: $transition;
+    }
+
+    &.left {
+      &::after {
+        left: 0;
+      }
+    }
+
+    &.right {
+      &::after {
+        left: calc(100% - #{$buttonSize});
+      }
+    }
+  }
+}

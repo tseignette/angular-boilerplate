@@ -1,0 +1,35 @@
+<a
+  *ngIf="link"
+  [routerLink]="link"
+  [ngClass]="CSSClasses"
+  (click)="__onClick($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</a>
+
+<a
+  *ngIf="href && !link"
+  [href]="href"
+  [target]="target"
+  [ngClass]="CSSClasses"
+  (click)="__onClick($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</a>
+
+<button
+  *ngIf="!link && !href"
+  type="button"
+  [ngClass]="CSSClasses"
+  (click)="__onClick($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+
+<ng-template #content>
+  <i *ngIf="icon && type === 'normal'" [ngClass]="icon"></i>
+  <span *ngIf="iconOnly === false">
+    <ng-content></ng-content>
+  </span>
+  <i *ngIf="icon && type === 'link'" [ngClass]="icon"></i>
+</ng-template>

@@ -1,0 +1,85 @@
+@import 'variables';
+
+$size: 4.0rem;
+
+:host {
+  display: inline-block;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  button, a {
+    @extend %reset-button-styles;
+
+    cursor: pointer;
+    transition: $transition;
+
+    span {
+      font-weight: $bold;
+    }
+
+    &.normal {
+      height: $size;
+      padding: 0 $gutterL;
+      border: 0.2rem solid $primaryColor;
+      border-radius: $radius;
+      user-select: none;
+
+      i {
+        margin-right: $gutterS;
+      }
+
+      &:hover {
+        background-color: $primaryColor;
+        color: $white;
+        
+        &:not(:active):not(:focus) {
+          box-shadow: $shadow;
+        }
+      }
+
+      &.light {
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+
+      &.iconOnly {
+        width: $size;
+        padding: 0;
+        border-radius: 50%;
+
+        i {
+          margin: auto;
+          font-size: 2.0rem;
+        }
+      }
+    }
+
+    &.link {
+      color: $primaryColor;
+
+      i {
+        margin-left: $gutterS;
+      }
+
+      &:hover {
+        text-decoration: underline;
+
+        i {
+          text-decoration: underline;
+        }
+      }
+
+      &.light {
+        color: $white;
+      }
+    }
+  }
+}

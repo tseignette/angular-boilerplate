@@ -1,2 +1,36 @@
 /* You can add SCSS variables to this file and import it in any .scss file with:  */
 /* @import 'variables'; */
+
+$primaryColor: #226F54;
+$black: #172C33;
+$white: #FFFFFF;
+
+$bold: bold;
+
+$gutterXS: 0.2rem;
+$gutterS: 0.5rem;
+$gutter: 1.0rem;
+$gutterL: 1.5rem;
+$gutterXL: 2.0rem;
+$gutterXXL: 5.0rem;
+$gutterXXXL: 8.0rem;
+
+$radius: 0.4rem;
+
+$transition: all 0.2s ease;
+
+$shadow: 0 0.2rem 1.0rem rgba(0, 0, 0, 0.2);
+
+%reset-button-styles {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: inherit;
+
+  &:active, &:focus {
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0rem 0.3rem $gray;
+  }
+}

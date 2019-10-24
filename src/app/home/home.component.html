@@ -1,1 +1,105 @@
-<h1>Welcome to angular-boilerplate!</h1>
+<div class="container">
+  <h1 class="title">Angular boilerplate</h1>
+
+  <!-- =========================================================================================== -->
+  <!-- LIBRARIES INCLUDED -->
+  <!-- =========================================================================================== -->
+  <h2>Libraries included</h2>
+  
+  <p><strong>Font Awesome</strong> free icons and <strong>Bootstrap</strong> (grid system only with custom gutters, see <em>bootstrap-custom.scss</em>) are ready-to-use!</p>
+
+  <!-- ========================================================================================= -->
+  <!-- STYLES -->
+  <!-- ========================================================================================= -->
+  <h2>Styles</h2>
+
+  <p>Styles definition is separated in 2 files :</p>
+  <ul>
+    <li><strong>styles.scss</strong> contains global styles</li>
+    <li><strong>variables.scss</strong> contains variables accessible everywhere in order to maintain a coherent style in the app</li>
+  </ul>
+
+  <!-- ========================================================================================= -->
+  <!-- FEATURES -->
+  <!-- ========================================================================================= -->
+  <h2>Features</h2>
+
+  <ul>
+    <li><strong>NotFoundComponent:</strong> nonexistent routes are redirected to this component</li>
+    <li><strong>ngForObjectPipe:</strong> allows to use objects in <em>ngFor</em> the same way as arrays</li>
+  </ul>
+
+  <!-- =========================================================================================== -->
+  <!-- UI FEATURES -->
+  <!-- =========================================================================================== -->
+  <h2>UI features</h2>
+  
+  <ng-container *ngFor="let type of [ 'normal', 'link' ]">
+    <h3>{{ type === 'normal' ? 'Buttons' : 'Links' }}</h3>
+
+    <div class="row-full-spaced">
+      <div class="row">
+        <div class="col-auto">
+          <app-button [type]="type">Normal</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button [type]="type" icon="fab fa-angular">Normal</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button *ngIf="type !== 'link'" iconOnly icon="fab fa-angular"></app-button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row-full-spaced">
+      <div class="row">
+        <div class="col-auto">
+          <app-button [type]="type" (onClick)="ouch()">Button</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button [type]="type" link="nowhere">RouterLink</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button [type]="type" href="https://github.com/tseignette">Link</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button [type]="type" href="https://github.com/tseignette" target="_blank">Link in new tab</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button *ngIf="type !== 'link'" iconOnly icon="fab fa-angular" link="nowhere"></app-button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row-full-spaced dark">
+      <div class="row">
+        <div class="col-auto">
+          <app-button [type]="type" light>Light</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button [type]="type" light icon="fab fa-angular">Light</app-button>
+        </div>
+        <div class="col-auto">
+          <app-button *ngIf="type !== 'link'" light iconOnly icon="fab fa-angular"></app-button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  
+  <h3>Toggle switch</h3>
+  
+  <div class="row-full-spaced">
+    <div class="row">
+      <div class="col-auto">
+        <app-toggle-switch [form]="toggleSwitchForm" left="FR" right="EN"></app-toggle-switch>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================================= -->
+  <!-- CONTRIBUTING -->
+  <!-- ========================================================================================= -->
+  <h2>Contributing</h2>
+
+  <p>This project structure is inspired from <app-button type="link" href="https://github.com/akveo/ngx-admin" target="_blank">ngx-admin</app-button>, if you see it can be improved, do not hesitate to contribute!</p>
+</div>

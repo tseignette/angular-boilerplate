@@ -1,5 +1,18 @@
+@import 'variables';
+
 :host {
-  h1 {
+  .title {
     text-align: center;
+  }
+
+  .row-full-spaced {
+    margin-bottom: $gutterL;
+
+    &.dark {
+      padding: $gutter;
+      box-shadow: $shadow;
+      border-radius: $radius;
+      background-color: $primaryColor;
+    }
   }
 }

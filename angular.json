@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/app/@theme/styles/styles.scss",
+              "src/app/@theme/styles/bootstrap-custom.scss",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
             "stylePreprocessorOptions": {
@@ -94,7 +95,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/app/@theme/styles/styles.scss"
+              "src/app/@theme/styles/styles.scss",
+              "src/app/@theme/styles/bootstrap-custom.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

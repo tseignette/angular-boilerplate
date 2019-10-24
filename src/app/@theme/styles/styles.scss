@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+  color: $black;
+  font-size: 10px; // 10px to be able to use rem unit easily
+}
+
+div, button, a {
+  font-size: 1.4rem;
+}

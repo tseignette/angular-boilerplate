@@ -21,6 +21,8 @@ $size: 4.0rem;
     }
 
     &.normal {
+      @extend %button-focus-style;
+
       height: $size;
       padding: 0 $gutterL;
       border: 0.2rem solid $primaryColor;

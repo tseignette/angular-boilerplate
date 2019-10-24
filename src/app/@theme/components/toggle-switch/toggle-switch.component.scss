@@ -20,6 +20,7 @@
     position: relative;
     margin: 0 $gutter;
     padding: (($buttonSize - $sliderSize) / 2) 0;
+    outline: none;
 
     &::before {
       content: '';
@@ -31,6 +32,8 @@
     }
 
     &::after {
+      @extend %button-focus-style;
+
       content: '';
       position: absolute;
       top: 0;

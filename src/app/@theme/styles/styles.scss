@@ -12,6 +12,40 @@ html {
   font-size: 10px; // 10px to be able to use rem unit easily
 }
 
-div, button, a {
+body {
+  margin: 0;
+}
+
+::selection {
+  color: $white;
+  background-color: $primaryColor;
+}
+
+p, a, button, div {
   font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.0rem;
+}
+
+h1, h2 {
+  margin-top: 3.0rem;
+}
+
+h3, h4, h5, h6 {
+  margin-top: 2.0rem;
+}
+
+p, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+em {
+  font-style: italic;
 }

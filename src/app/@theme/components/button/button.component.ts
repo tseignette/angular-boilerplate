@@ -35,7 +35,7 @@ export class ButtonComponent implements OnChanges, OnInit {
   /**
    * Adapt button style if background is dark
    */
-  @Input() light: boolean = false;
+  @Input() light: boolean | '' = false;
 
   /**
    * Parameter given to RouterLink directive
@@ -70,7 +70,7 @@ export class ButtonComponent implements OnChanges, OnInit {
   }
 
   computeClasses() {
-    this.CSSClasses = { light: this.light !== false };
+    this.CSSClasses = { light: (this.light === true) || (this.light === '') };
     this.CSSClasses[this.type] = true;
 
     if (this.type === 'normal') {

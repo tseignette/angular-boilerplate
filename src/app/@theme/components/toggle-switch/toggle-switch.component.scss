@@ -22,6 +22,10 @@
     padding: (($buttonSize - $sliderSize) / 2) 0;
     outline: none;
 
+    &::before, &::after {
+      transition: $transition;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -32,8 +36,6 @@
     }
 
     &::after {
-      @extend %button-focus-style;
-
       content: '';
       position: absolute;
       top: 0;
@@ -43,8 +45,12 @@
       border-radius: 50%;
       box-shadow: $shadow;
       background-color: $primaryColor;
+    }
 
-      transition: $transition;
+    &:focus, &:active {
+      &::before {
+        @include button-active-focus-styles($primaryColorS);
+      }
     }
 
     &.left {

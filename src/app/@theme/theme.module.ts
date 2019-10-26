@@ -1,12 +1,13 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NotFoundComponent, ButtonComponent, ToggleSwitchComponent } from './components';
+import { NotFoundComponent, ButtonComponent, ToggleSwitchComponent, DialogComponent } from './components';
 import { NgForObjectPipe } from './pipes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 const COMPONENTS = [
   ButtonComponent,
+  DialogComponent,
   NotFoundComponent,
   ToggleSwitchComponent,
 ];

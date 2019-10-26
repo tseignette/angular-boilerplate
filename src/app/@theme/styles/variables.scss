@@ -2,9 +2,11 @@
 /* @import 'variables'; */
 
 $primaryColor: #226F54;
+$primaryColorS: #72A392;
 $black: #172C33;
 $white: #FFFFFF;
 $gray: #AFBFBA;
+$grayS: #F5F7FA;
 
 $bold: bold;
 
@@ -16,6 +18,8 @@ $gutterXL: 2.0rem;
 $gutterXXL: 5.0rem;
 $gutterXXXL: 8.0rem;
 $gutterXXXXL: 10.0rem;
+
+$zindexDialog: 10;
 
 $radius: 0.4rem;
 
@@ -32,9 +36,13 @@ $shadow: 0 0.2rem 1.0rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-%button-focus-style {
+@mixin button-active-focus-styles($color: $gray) {
+  outline: none;
+  box-shadow: 0 0 0rem 0.3rem $color;
+}
+
+@mixin button-active-focus($color: $gray) {
   &:active, &:focus {
-    outline: none;
-    box-shadow: 0 0 0rem 0.3rem $gray;
+    @include button-active-focus-styles($color);
   }
 }

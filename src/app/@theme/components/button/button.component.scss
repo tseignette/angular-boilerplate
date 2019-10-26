@@ -21,7 +21,7 @@ $size: 4.0rem;
     }
 
     &.normal {
-      @extend %button-focus-style;
+      @include button-active-focus();
 
       height: $size;
       padding: 0 $gutterL;

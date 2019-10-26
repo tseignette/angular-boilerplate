@@ -1,0 +1,17 @@
+<div class="wrapper" *ngIf="open" (click)="close()">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div class="dialog" (click)="preventClose()">
+          <h2>{{ title }}</h2>
+          <div class="content">
+            <ng-content></ng-content>
+          </div>
+          <div class="close-button">
+            <app-button type="link" (onClick)="close()">Fermer</app-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

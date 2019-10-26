@@ -1,0 +1,36 @@
+@import 'variables';
+
+:host {
+  .wrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: $zindexDialog;
+    background-color: rgba($color: $black, $alpha: 0.6);
+  
+    .dialog {
+      display: flex;
+      flex-direction: column;
+      padding: $gutterL;
+      max-height: calc(100vh - 2*#{$gutterL});
+      overflow: auto;
+      border-radius: $radius;
+      background-color: $grayS;
+
+      h2 {
+        margin: 0;
+        text-align: center;
+      }
+
+      .content {
+        margin: $gutterL 0;
+      }
+
+      .close-button {
+        align-self: center;
+      }
+    }
+  }
+}

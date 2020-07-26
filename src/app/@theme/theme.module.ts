@@ -1,5 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AutofocusDirective } from './directives';
+import { ConcatPipe, ForObjectPipe, JoinPipe, LastElementPipe, SplitPipe, ToFixedPipe } from './pipes';
 
 const COMPONENTS_PRIVATE = [
   // Add components you do not want to export
@@ -10,7 +12,7 @@ const COMPONENTS_PUBLIC = [
 ];
 
 const DIRECTIVES = [
-  // Add your directives here
+  AutofocusDirective
 ];
 
 const IMPORTS = [
@@ -18,7 +20,12 @@ const IMPORTS = [
 ];
 
 const PIPES = [
-  // Add your pipes here
+  ConcatPipe,
+  ForObjectPipe,
+  JoinPipe,
+  LastElementPipe,
+  SplitPipe,
+  ToFixedPipe
 ];
 
 const PROVIDERS = [

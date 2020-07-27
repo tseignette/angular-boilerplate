@@ -1,13 +1,14 @@
 # Angular boilerplate
-Angular 10 boilerplate with [Spectre.css](https://picturepan2.github.io/spectre), i18n and some common resources.
+Angular 10 boilerplate with [Spectre.css](https://picturepan2.github.io/spectre), i18n, static prerendering and some common resources.
 
 ## Getting started
 `npm install` is obviously a good start. After that, you can run:
 - `npm start` to start the project locally on [http://localhost:4200]() (accessible through local network)
 - `npm run start:fr` does the same using the French locale
-- `npm run extract` to extract the source language file in `src/locale`
-- `npm run build` to build for production, files are generated in `dist/angular-boilerplate`
 - `npm lint` to lint (the default configuration has not been modified)
+- `npm run extract` to extract the source language file in `src/locale`
+- `npm run build` to build for production, files are generated in `dist/angular-boilerplate/browser`
+- `npm run prerender` does the same but it also prerenders routes defined in the `prerender` configuration in `angular.json`
 
 ## Features
 ### Styling

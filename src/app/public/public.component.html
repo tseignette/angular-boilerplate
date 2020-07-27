@@ -2,7 +2,7 @@
   <p i18n><a [href]="isEnglish ? 'fr' : '../'">Aller à la version française</a></p>
 
   <h1 i18n class="text-center" id="angular-boilerplate">Angular boilerplate</h1>
-  <p i18n class="text-center">Angular 10 boilerplate with <a href="https://picturepan2.github.io/spectre">Spectre.css</a>, i18n and some common
+  <p i18n class="text-center">Angular 10 boilerplate with <a href="https://picturepan2.github.io/spectre">Spectre.css</a>, i18n, static prerendering and some common
     resources.</p>
 
   <h2 i18n id="getting-started">Getting started</h2>
@@ -11,10 +11,10 @@
     <li i18n><code>npm start</code> to start the project locally on <a href="">http://localhost:4200</a> (accessible through
       local network)</li>
     <li i18n><code>npm run start:fr</code> does the same using the French locale</li>
-    <li i18n><code>npm run extract</code> to extract the source language file in <code>src/locale</code></li>
-    <li i18n><code>npm run build</code> to build for production, files are generated in <code>dist/angular-boilerplate</code>
-    </li>
     <li i18n><code>npm lint</code> to lint (the default configuration has not been modified)</li>
+    <li i18n><code>npm run extract</code> to extract the source language file in <code>src/locale</code></li>
+    <li i18n><code>npm run build</code> to build for production, files are generated in <code>dist/angular-boilerplate/browser</code></li>
+    <li i18n><code>npm run prerender</code> does the same but it also prerenders routes defined in the <code>prerender</code> configuration in <code>angular.json</code></li>
   </ul>
 
   <h2 i18n id="features">Features</h2>

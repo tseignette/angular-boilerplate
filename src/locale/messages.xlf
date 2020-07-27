@@ -16,8 +16,8 @@
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="193a284fb9e430d35cfde94b0b2bee1d66de210e" datatype="html">
-        <source>Angular 10 boilerplate with <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Spectre.css<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, i18n and some common
+      <trans-unit id="8e4f4c2644d62db742b12a079a7fcc9131685579" datatype="html">
+        <source>Angular 10 boilerplate with <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Spectre.css<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, i18n, static prerendering and some common
     resources.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
@@ -53,23 +53,29 @@
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4de2a99cef3df698be0fee9b8aa955e5a347b9ee" datatype="html">
-        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm run extract<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to extract the source language file in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>src/locale<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source>
+      <trans-unit id="f7ef8d623595181e5a59eaca7061bc31d02b6d1a" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm lint<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to lint (the default configuration has not been modified)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1d019a1e5cd9279571d1488dccee74b7242d6090" datatype="html">
-        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm run build<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to build for production, files are generated in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>dist/angular-boilerplate<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/>
-    </source>
+      <trans-unit id="4de2a99cef3df698be0fee9b8aa955e5a347b9ee" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm run extract<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to extract the source language file in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>src/locale<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="f7ef8d623595181e5a59eaca7061bc31d02b6d1a" datatype="html">
-        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm lint<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to lint (the default configuration has not been modified)</source>
+      <trans-unit id="bacdf5d6b7ac519a288e53f06ad6d5386efa9624" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm run build<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> to build for production, files are generated in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>dist/angular-boilerplate/browser<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/public.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9a007362f33c3f9427733aa15be4f9b7628b2e4e" datatype="html">
+        <source><x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>npm run prerender<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> does the same but it also prerenders routes defined in the <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>prerender<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/> configuration in <x id="START_TAG_CODE" ctype="x-code" equiv-text="&lt;code&gt;"/>angular.json<x id="CLOSE_TAG_CODE" ctype="x-code" equiv-text="&lt;/code&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
           <context context-type="linenumber">17</context>

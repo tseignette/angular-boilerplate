@@ -17,12 +17,10 @@ const routes: Routes = [
     RouterModule
   ],
   imports: [
-    RouterModule.forRoot(
-      routes,
-      {
-        scrollPositionRestoration: 'enabled'
-      }
-    )
+    RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    initialNavigation: 'enabled'
+})
   ]
 })
 export class AppRoutingModule { }

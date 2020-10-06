@@ -133,6 +133,11 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "src/app/@theme/styles"
+                ]
+              },
               "localize": true,
               "sourceMap": false,
               "optimization": true

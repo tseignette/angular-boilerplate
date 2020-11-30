@@ -19,7 +19,7 @@
     "start": "ng serve --host=0.0.0.0",
     "start:fr": "ng serve --host=0.0.0.0 --configuration=fr",
     "lint": "ng lint",
-    "extract": "ng xi18n --output-path=src/locale",
+    "extract": "ng extract-i18n --output-path=src/locale",
     "build": "ng build --prod",
     "prerender": "ng run angular-boilerplate:prerender"
   },

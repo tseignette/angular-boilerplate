@@ -1,7 +1,7 @@
 {
   "name": "angular-boilerplate",
   "version": "1.0.0",
-  "description": "Angular 10 boilerplate with Spectre.css, i18n, static prerendering and some common resources.",
+  "description": "Angular 11 boilerplate with Spectre.css, i18n, static prerendering and some common resources.",
   "keywords": [
     "angular",
     "boilerplate",
